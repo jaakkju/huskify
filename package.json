@@ -1,0 +1,24 @@
+{
+  "name": "huskify",
+  "version": "0.0.2",
+  "description": "Husky sledge organizer",
+  "author": "Juhani Jaakkola",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8.9",
+    "winston": "~0.8.1",
+    "gulp-connect": "~2.0.6",
+    "gulp-jshint": "~1.9.0",
+    "jshint-stylish": "~1.0.0",
+    "gulp-uglifyjs": "~0.5.0",
+    "gulp-concat": "~2.4.1",
+    "gulp-minify-css": "~0.3.11",
+    "gulp-minify-html": "~0.1.6",
+    "gulp-open": "~0.3.0",
+    "del": "~0.1.3",
+    "gulp-imagemin": "~1.2.1",
+    "gulp-sourcemaps": "~1.2.8",
+    "gulp-replace": "~0.5.2"
+  }
+}

@@ -1,0 +1,66 @@
+    <div class="huskify-tables pure-g">
+        <div class="pure-u-6-24">
+            <div class="huskify-table huskify-table-dogs">
+                <div class="huskify-table-header">
+                    <h2>{{ 'HEADLINE_DOG' | translate }}</h2>
+                </div>
+
+                <ul class="huskify-table-list" ui-sortable ng-model="dogs">
+                    <li ng-repeat="dog in dogs" ng-click="clickDog(dog, $index)">
+                        {{dog.name}}
+                        <button class="huskify-button fa fa-times" ng-click="removeDog(dog, $index)"></button>
+                    </li>
+                </ul>
+
+                <form class="pure-form" ng-submit="createDog()">
+                    <fieldset>
+                        <input class="husky-form" type="text" 
+                        placeholder="{{ 'FORM_DOG' | translate }}" ng-model="dog">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="pure-u-12-24">
+            <div class="huskify-table">
+
+                <div class="huskify-table-header">
+                    <h2>{{selected.sledge || 'HEADLINE_SELECTED' | translate}}</h2>
+                </div>
+
+                <ul class="huskify-table-list huskify-table-organize" ui-sortable ng-model="selected.dogs">
+                    <li ng-repeat="dog in selected.dogs" ng-class="{'huskify-table-leader': dog.leader}" ng-click="clickSelected(dog, $index)">
+                        {{dog.name}}
+                        <button class="huskify-button fa fa-paw" ng-click="toggleLeader(dog, $index); $event.stopPropagation();"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pure-u-6-24">
+            <div class="huskify-table huskify-table-sledges">
+                <div class="huskify-table-header">
+                    <h2>{{ 'HEADLINE_SLEDGE' | translate }}</h2>
+                </div>
+
+                <ul class="huskify-table-list">
+                    <li ng-repeat="sledge in sledges" ng-class="{'huskify-table-list-selected': $index == selectedIdx}" ng-click="clickSledge(sledge, $index)">
+                        {{sledge.sledge}}
+                        <button class="huskify-button fa fa-times" ng-click="removeSledge(sledge, $index);"></button>
+                    </li>
+                </ul>
+
+                <form class="pure-form" ng-submit="createSledge()">
+                    <fieldset>
+                        <input class="husky-form" type="text" 
+                        placeholder="{{ 'FORM_SLEDGE' | translate }}" ng-model="sledge">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div> <!-- end huskify-tables -->
+
+    <div class="footer l-box">
+        <a href="#print" class="pure-button huskify-button">
+        {{ 'BTN_PRINT' | translate }}</a>
+    </div>               

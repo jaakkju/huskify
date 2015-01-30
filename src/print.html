@@ -1,0 +1,20 @@
+<div class="huskify-tables pure-g">
+    <div class="pure-u-6-24" ng-repeat="sledge in sledges | hasDogs">
+        <div class="huskify-table huskify-table-print">
+            <div class="huskify-table-header">
+                <h2>{{sledge.sledge}}</h2>
+            </div>
+
+            <ul class="huskify-table-list huskify-table-organize">
+                <li ng-repeat="dog in sledge.dogs" ng-class="{'huskify-table-leader': dog.leader}">
+                    {{dog.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer l-box">
+    <a href="#organize" class="pure-button huskify-button">
+    {{ 'BTN_ORGANIZE' | translate }}</a>
+</div>    

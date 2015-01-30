@@ -1,0 +1,234 @@
+body {
+    color: #526066;
+    font-family: 'Open Sans', sans-serif;ns-serif;
+}
+
+h2, h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.huskify-button {
+  width: 100px;
+}
+
+button,
+input[type="checkbox"] {
+  outline: none;
+}
+
+.l-content {
+    margin: 1em auto;
+}
+.l-box {
+    padding: 0.5em 2em;
+}
+
+.pure-menu {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.40);
+}
+
+.huskify-tables {
+    margin-bottom: 3.125em;
+    text-align: center;
+}
+
+.huskify-table {
+    border: 1px solid #ddd;
+    margin: 0 0.5em 2em;
+}
+
+/* Custom header colors for dogs and sledges */
+.huskify-table-dogs .huskify-table-header h2{
+    background: #519251;
+}
+
+.huskify-table-sledges .huskify-table-header h2{
+    background: #2c4985;
+}
+
+.huskify-table-header {
+    background: #111;
+    color: #fff;
+}
+
+.huskify-table-header h2 {
+    font-weight: normal;
+    font-size: 1em;
+    padding: 2em;
+    margin: 0;
+}
+
+.huskify-table-list {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.huskify-table-list li {
+  position: relative;
+  border-bottom: 1px solid #E0E0E0;
+  background: #f7f7f7;
+  padding: 0.8em 0;
+}
+
+.huskify-table-list li:hover {
+    background: #DAE7ED;
+    cursor: pointer;
+}
+
+.huskify-table-list li .huskify-button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 22px;
+  color: #96A9EB;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.huskify-table-list li .huskify-button:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.huskify-table-list li:hover .huskify-button {
+  display: block;
+}
+
+.huskify-table-organize li .huskify-button:after {
+   content: none; 
+}
+
+.huskify-table-organize .huskify-table-leader {
+  width: 100%;
+}
+
+.huskify-table-list .huskify-table-list-selected {
+  background: #DADEED;
+}
+
+.huskify-table-organize li {
+  box-sizing:border-box;
+  border: 1px solid #C3C3C3;
+  float: left; 
+  width: 50%;
+}
+
+.husky-form {
+    margin-top: 0.5em;
+    width: 90%;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* Print definitions */
+.huskify-table-print .huskify-table-header {
+    border: 1px solid #464646;
+}
+
+.huskify-table-print .huskify-table-header h2 {
+    background: #FFFFFF; 
+    color: #383838;
+    font-size: 1em;
+    font-weight: bold; 
+}
+
+.huskify-table-print {
+  margin-top: 1em;
+}
+
+.huskify-table-print .huskify-table-list li {
+    background: #FFFFFF;
+    color: #383838;
+    border: 1px solid #464646;
+    font-size: 1em;
+    font-weight: bolder;    
+}
+
+.huskify-table-print .huskify-table-list li:hover {
+  background: #FFFFFF;
+  cursor: auto;
+} 
+
+@media print {
+    .footer {
+        display: none;
+    }
+}
+
+.ngdialog-overlay {
+  background: rgba(0,0,0,.2);
+}
+
+.ngdialog.ngdialog-theme-plain .ngdialog-content {
+  border: 6px solid #274076;
+  width: 520px;
+
+  /* Using important to override font's from ngDialog */
+  color: #52576B !important;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 1em;
+}
+
+.ngdialog-content h3 {
+  color: #274076 !important;
+  text-align: center;
+}
+
+.ngdialog-content li {
+  list-style-type: none;
+}
+
+.ngdialog-content li:before {    
+  font-family: 'FontAwesome';
+  content: '\f1b0';
+  margin:0 15px 0 -30px;
+  font-size: 0.8em;
+  color: #274076;
+}
+
+#webmaster {
+  text-align: center;
+}
+
+#webmaster .year {
+  font-size: 0.9em;
+}
+
+#webmaster a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#webmaster a:hover{
+  text-decoration: underline;
+}
